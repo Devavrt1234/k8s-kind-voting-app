@@ -5,7 +5,7 @@
 trigger:
  paths:
    include:
-     - result/*
+     - vote/*
 
 resources:
 - repo: self
@@ -13,7 +13,7 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '96978393-6b1e-4782-aedc-c5ce00c71fd1'
-  imageRepository: 'resultapp'
+  imageRepository: 'voteapp'
   containerRegistry: 'azuredevopscrnew.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/result/Dockerfile'
   tag: '$(Build.BuildId)'
@@ -35,7 +35,7 @@ stages:
         containerRegistry: '$(dockerRegistryServiceConnection)'
         repository: '$(imageRepository)'
         command: 'build'
-        Dockerfile: 'result/Dockerfile'
+        Dockerfile: 'vote/Dockerfile'
         tags: '$(tag)'
 
 - stage: Push
