@@ -62,3 +62,6 @@ stages:
       inputs:
         scriptPath: 'vote/scripts/updateK8sManifests.sh'
         args: 'vote $(imageRepository) $(tag)'
+      env:
+        GITHUB_USER: $(GITHUB_USER)
+        GITHUB_TOKEN: $(GITHUB_TOKEN)
