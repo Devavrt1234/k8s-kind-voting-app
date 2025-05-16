@@ -51,6 +51,7 @@ stages:
         repository: '$(imageRepository)'
         command: 'push'
         tags: '$(tag)'
+        
 - stage: Update
   displayName: Update
   jobs:
