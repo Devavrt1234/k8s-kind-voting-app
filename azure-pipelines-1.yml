@@ -60,5 +60,5 @@ stages:
      steps:
        - task: ShellScript@2
          inputs:
-           scriptPath: 'scripts/UpdateK8sManifests.sh'
+           scriptPath: '/scripts/UpdateK8sManifests.sh'
            args: 'vote $(imageRepository) $(tag)'
