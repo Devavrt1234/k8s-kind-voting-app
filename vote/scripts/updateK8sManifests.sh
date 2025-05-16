@@ -5,7 +5,7 @@ set -x
 
 # Set the repository URL
 #REPO_URL="https://<ACCESS-TOKEN>@dev.azure.com/<AZURE-DEVOPS-ORG-NAME>/voting-app/_git/voting-app" for azure repo 
-REPO_URL="https://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@https://github.com/Devavrt1234/k8s-kind-voting-app.git/vote"
+REPO_URL="https://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@https://github.com/Devavrt1234/k8s-kind-voting-app.git/vote"
 #for github repo
 
 # Clone the git repository into the /tmp directory
